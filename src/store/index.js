@@ -1,5 +1,4 @@
 /**
- * @author chuzhixin 1204505056@qq.com
  * @description 导入所有 vuex 模块，自动加入namespaced:true，用于解决vuex命名冲突，请勿修改。
  */
 import { createStore } from 'vuex'
@@ -12,6 +11,7 @@ files.keys().forEach((key) => {
 Object.keys(modules).forEach((key) => {
   modules[key]['namespaced'] = true
 })
+console.log('modules_', modules);
 export default createStore({
   modules,
 })

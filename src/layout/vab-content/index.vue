@@ -9,18 +9,44 @@
 </template>
 
 <script>
+import { watchEffect, computed, getCurrentInstance } from 'vue';
+import { useRouter } from "vue-router";
+import { useStore, mapGetters } from "vuex";
   export default {
     name: 'VabContent',
-    watch: {
-      $route: {
-        handler() {
-          if ('mobile' === this.device) {
-            this.$store.dispatch('settings/foldSideBar')
-          }
-        },
-        immediate: true,
-      },
-    },
+    setup( prpos ){
+
+      const router = useRouter();
+
+      const store = useStore();
+
+      const device = useStore().getters['settings/device'];
+      
+      const currentInstance = getCurrentInstance();
+
+      setTimeout(()=>{
+      console.log('device_', device , currentInstance, prpos, );
+
+      }, 2000);
+
+      
+      watchEffect(() => {
+        if ('mobile' === device) {
+          store.dispatch('settings/foldSideBar')
+        }
+      })
+    }
+    // watch: {
+    //   $route: {
+    //     handler() {
+    //       console.log('watch_$route_', this, this.device);
+    //       if ('mobile' === this.device) {
+    //         this.$store.dispatch('settings/foldSideBar')
+    //       }
+    //     },
+    //     immediate: true,
+    //   },
+    // },
   }
 </script>
 

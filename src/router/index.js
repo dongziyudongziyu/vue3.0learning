@@ -1,6 +1,21 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Layout from '@/layout'
 
+const ctx = require.context('./', true, /\.routes\.js$/);
+
+let temp_route = {}, router_list = [];
+
+ctx.keys().forEach(key => {
+  var reg = /\.\/module\/(.*)\.routes/;
+  temp_route[reg.exec(key)[1].trim()] = require('./module/user.routes.js');
+});
+
+for (const key in temp_route) {
+  router_list.push(...temp_route[key]);
+}
+
+console.log('templist_', router_list);
+
 export const constantRoutes = [
   {
     path: '/login',
@@ -19,6 +34,7 @@ export const constantRoutes = [
     component: () => import('@/views/404'),
     hidden: true,
   },
+  ...router_list
 ]
 export const asyncRoutes = [
   {

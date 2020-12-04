@@ -8,18 +8,16 @@ const {
   publicPath,
   assetsDir,
   outputDir,
-  lintOnSave,
+  lintOnSave, // this is open eslint
   transpileDependencies,
   title,
   abbreviation,
   devPort,
   providePlugin,
   build7z,
-  donation,
 } = require('./src/config')
-const { webpackBarName, webpackBanner, donationConsole } = require('vab-config')
+const { webpackBarName, webpackBanner } = require('vab-config')
 
-if (donation) donationConsole()
 const { version, author } = require('./package.json')
 const Webpack = require('webpack')
 const WebpackBar = require('webpackbar')
@@ -130,7 +128,7 @@ module.exports = {
         .plugin('compression')
         .use(CompressionWebpackPlugin, [
           {
-            filename: '[path].gz[query]',
+            filename: '[path][base].gz[query]',
             algorithm: 'gzip',
             test: new RegExp(
               '\\.(' + productionGzipExtensions.join('|') + ')$'
@@ -139,6 +137,14 @@ module.exports = {
             minRatio: 0.8,
           },
         ])
+        .end()
+      config.module
+        .rule('images')
+        .use('image-webpack-loader')
+        .loader('image-webpack-loader')
+        .options({
+          bypassOnDebug: true,
+        })
         .end()
     })
 

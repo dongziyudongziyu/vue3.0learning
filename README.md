@@ -8,13 +8,21 @@
 
 - [🎉 vue2.x + element-ui（免费商用，支持 PC、平板、手机）](https://chu1204505056.gitee.io/vue-admin-beautiful/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
 
-- [⚡️ vue3.x + ant-design-vue（beta 版本，免费商用，支持 PC、平板、手机）](https://chu1204505056.gitee.io/vue-admin-beautiful-mini/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
+- [⚡️ vue3.x + ant-design-vue（beta 版本，免费商用，支持 PC、平板、手机）](https://chu1204505056.gitee.io/vue-admin-beautiful-antdv/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
 
-- [🚀 pro 版演示地址（付费版本，支持 PC、平板、手机）](https://chu1204505056.gitee.io/vue-admin-beautiful-pro/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
+- [🚀 pro 版演示地址（付费版本，支持 PC、平板、手机，客服 QQ 1204505056）](https://chu1204505056.gitee.io/vue-admin-beautiful-pro/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
 
 - [🌐 github 仓库地址](https://github.com/chuzhixin/vue-admin-beautiful/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
 
 - [🌐 码云仓库地址](https://gitee.com/chu1204505056/vue-admin-beautiful/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
+
+## 备份地址（以上地址无法使用时请访问备份站）
+
+- [🎉 vue2.x + element-ui（免费商用，支持 PC、平板、手机）](http://beautiful.panm.cn/vue-admin-beautiful-element/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
+
+- [⚡️ vue3.x + ant-design-vue（beta 版本，免费商用，支持 PC、平板、手机）](http://beautiful.panm.cn/vue-admin-beautiful-antdv/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
+
+- [🚀 pro 版演示地址（付费版本，支持 PC、平板、客服 QQ 1204505056）](http://beautiful.panm.cn/vue-admin-beautiful-pro/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
 
 ## 🌱 vue3.x vue3.0-antdv 分支（ant-design-vue）[点击切换分支](https://github.com/chuzhixin/vue-admin-beautiful/tree/vue3.0-antdv)
 
@@ -42,17 +50,21 @@ npm i
 npm run serve
 ```
 
-## vue-admin-beautiful 前端讨论群 972435319，1139183756
+## vue-admin-beautiful 前端讨论 QQ 群 972435319，1139183756
 
 不管您加或者不加，您都可以享受到开源的代码，感谢您的支持和信任，群内提供 vue-admin-beautiful-template 基础版本、开发工具配置及使用手册、提供问题解答。
 
-<a>![img](https://gitee.com/chu1204505056/vabBooks/raw/gh-pages/img/ewm.png)</a>
-<a>![img](https://gitee.com/chu1204505056/vabBooks/raw/gh-pages/img/ewm_2.png)</a>
+<a>![img](https://gitee.com/chu1204505056/image/raw/master/ewm.png)</a>
+<a>![img](https://gitee.com/chu1204505056/image/raw/master/ewm_2.png)</a>
 
-## 我们定期赞助的开源项目（感谢巨人）
+## 我们承诺将定期赞助的开源项目（感谢巨人）
 
 <a title="ant-design-vue" href="https://github.com/vueComponent/ant-design-vue#backers" target="_blank">
 <img width="64px" src="https://gitee.com/chu1204505056/image/raw/master/antdv.svg"/>
+</a>
+
+<a title="element-plus" href="https://github.com/element-plus/element-plus" target="_blank">
+<img width="64px" src="https://gitee.com/chu1204505056/image/raw/master/element-plus.png"/>
 </a>
 
 ## 鸣谢
@@ -61,6 +73,7 @@ npm run serve
 | -------------------------------------------------------------------- |
 | [vue](https://github.com/vuejs/vue)                                  |
 | [element-ui](https://github.com/ElemeFE/element)                     |
+| [element-plus](https://github.com/element-plus/element-plus)         |
 | [ant-design-vue](https://github.com/vueComponent/ant-design-vue)     |
 | [mock](https://github.com/nuysoft/Mock)                              |
 | [axios](https://github.com/axios/axios)                              |
@@ -83,21 +96,25 @@ npm run serve
 
 - 如果您正在使用 vue-admin-beautiful 希望展示或不展示到 README 中请联系1204505056@qq.com添加或去除
 
-  <a title="360数科" href="https://www.360shuke.com/" target="_blank">
-  <img width="120px;" src="https://gitee.com/chu1204505056/image/raw/master/360.png"/>
-  </a>
-  <br/>
-  <a title="京东" href="https://www.jd.com/" target="_blank">
-  <img width="120px" src="https://gitee.com/chu1204505056/image/raw/master/jingdong.png"/>
-  </a>
-  <br/>
-  <a title="若谷" href="https://ruogu.speakin.mobi/" target="_blank">
-  <img width="120px" src="https://gitee.com/chu1204505056/image/raw/master/ruogu.png"/>
-  </a>
-  <br/>
-  <a title="千鸟云商" href="https://www.qianniaovip.com/" target="_blank">
-  <img width="120px" src="https://gitee.com/chu1204505056/image/raw/master/qianniaoyunshang.png"/>
-  </a>
+ <a title="360数科" href="https://www.360shuke.com/" target="_blank">
+ <img width="120px;" src="https://gitee.com/chu1204505056/image/raw/master/360.png"/>
+ </a>
+ <br/>
+ <a title="京东" href="https://www.jd.com/" target="_blank">
+ <img width="120px" src="https://gitee.com/chu1204505056/image/raw/master/jingdong.png"/>
+ </a>
+ <br/>
+ <a title="uview" href="https://www.uviewui.com/" target="_blank">
+  <img width="120px" src="https://gitee.com/chu1204505056/image/raw/master/uview.png"/>
+</a>
+<br/>
+ <a title="千鸟云商" href="https://www.qianniao.vip/#/login" target="_blank">
+ <img width="120px" src="https://gitee.com/chu1204505056/image/raw/master/qianniaoyunshang.png"/>
+ </a>
+ <br/>
+ <a title="OPSLI" href="https://www.opsli.com/" target="_blank">
+ <img width="120px" src="https://gitee.com/chu1204505056/image/raw/master/opsli.png"/>
+ </a>
 
 ## 优势及注意事项
 

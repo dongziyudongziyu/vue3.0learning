@@ -8,7 +8,10 @@ import { convertRouter, filterRoutes } from '@/utils/routes'
 
 const state = { routes: [], partialRoutes: [] }
 const getters = {
-  routes: (state) => state.routes,
+  routes: (state) => {
+    console.log('routes_getter_')
+    return state.routes;
+  },
   partialRoutes: (state) => state.partialRoutes,
 }
 const mutations = {
