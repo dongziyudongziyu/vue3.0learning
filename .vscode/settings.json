@@ -52,5 +52,6 @@
   "files.autoSave": "onFocusChange",
   "path-intellisense.mappings": {
     "@": "${workspaceRoot}/src"
-  }
+  },
+  "git.ignoreLimitWarning": true
 }
