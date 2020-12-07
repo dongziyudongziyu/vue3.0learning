@@ -9,7 +9,7 @@ const setting = {
   //放置生成的静态资源 (js、css、img、fonts) 的 (相对于 outputDir 的) 目录。
   assetsDir: 'static',
   //开发环境每次保存时是否输出为eslint编译警告
-  lintOnSave: false,  // 终于关闭了
+  lintOnSave: false, // 终于关闭了
   //进行编译的依赖
   transpileDependencies: ['vue-echarts', 'resize-detector'],
   //默认的接口地址 如果是开发环境和生产环境走vab-mock-server，当然你也可以选择自己配置成需要的接口地址
@@ -28,7 +28,7 @@ const setting = {
   //版本号
   version: process.env.VUE_APP_VERSION,
   //pro版本copyright可随意修改
-  copyright: 'chuzhixin 1204505056@qq.com',
+  copyright: ' ', // chuzhixin 1204505056@qq.com
   //缓存路由的最大数量
   keepAliveMaxNum: 99,
   //路由模式，可选值为 history 或 hash

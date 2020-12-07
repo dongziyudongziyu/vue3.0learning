@@ -14,6 +14,7 @@
       :trigger="null"
     >
       <vab-logo />
+
       <a-menu
         class="vab-menu"
         theme="dark"
@@ -108,7 +109,7 @@
       window.removeEventListener('resize', this.handleLayouts)
     },
     mounted() {
-      this.handleLayouts();
+      this.handleLayouts()
     },
     methods: {
       ...mapActions({
