@@ -113,7 +113,8 @@
       },
       handleTabClick(tab) {
         const route = this.visitedRoutes.filter((item) => item.path === tab)[0]
-        if (this.$route.fullPath !== route.fullPath) this.$router.push(route)
+        if (this.$route.fullPath !== route.fullPath)
+          this.$router.push(route.fullPath)
       },
       async handleTabRemove(fullPath) {
         const view = this.visitedRoutes.find((item) => {

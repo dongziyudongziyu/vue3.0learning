@@ -8,7 +8,6 @@ let temp_route = {},
 
 ctx.keys().forEach((key) => {
   var reg = /\.\/module\/(.*)\.routes/
-  console.log('keyName_', key)
   temp_route[reg.exec(key)[1].trim()] = require(key + '')
 })
 

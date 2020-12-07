@@ -10,7 +10,7 @@
     type="success"
     show-icon
   />
-
+  <a-button type="primary" @click="test1">你好</a-button>
   <a-card class="version-information">
     <template v-slot:title>系统信息</template>
     <template v-slot:extra>
@@ -122,6 +122,11 @@
         dependencies: dependencies,
         devDependencies: devDependencies,
       }
+    },
+    methods: {
+      test1() {
+        this.$router.push('/user/user')
+      },
     },
   }
 </script>

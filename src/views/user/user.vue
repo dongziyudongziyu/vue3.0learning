@@ -8,7 +8,7 @@
 <script>
   import { reactive, ref } from 'vue'
   export default {
-    name: 'App',
+    name: 'hello1',
     title: '你好',
     setup() {
       const title = reactive({ name: '欢迎学习Vue3.0' })

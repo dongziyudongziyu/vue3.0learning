@@ -25,24 +25,24 @@ ctx.keys().forEach((key) => {
       affix: component.affix || false,
     },
     children: [
-      // _component
+      {
+        path: _path,
+        name: _name,
+        meta: {
+          title: component.title || _name,
+          icon: component.icon || 'account-circle-fill',
+          affix: component.affix || false,
+        },
+        component: _component,
+      },
     ],
     component: _component,
     isLayout: component.isLayout || true,
     // fullPath: _path,
-    // redirect: _path,
+    redirect: _path,
   }
 
-  _currentRoute.children.push({
-    path: _path,
-    name: _name,
-    meta: {
-      title: component.title || _name,
-      icon: component.icon || 'account-circle-fill',
-      affix: component.affix || false,
-    },
-    component: _component,
-  })
+  // _currentRoute.children.push()
 
   routes.push(_currentRoute)
 })
