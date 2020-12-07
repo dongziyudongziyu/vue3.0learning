@@ -34,6 +34,7 @@
       }
     },
     created() {
+      this.item.hidden !== true ? console.log('showChildren_', this.item) : ''
       const showChildren = this.handleChildren(this.item.children)
       if (showChildren.length === 0) {
         this.menuComponent = 'MenuItem'

@@ -1,20 +1,25 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Layout from '@/layout'
 
-const ctx = require.context('./', true, /\.routes\.js$/);
+const ctx = require.context('./', true, /\.routes\.js$/)
 
-let temp_route = {}, router_list = [];
+let temp_route = {},
+  router_list = []
 
-ctx.keys().forEach(key => {
-  var reg = /\.\/module\/(.*)\.routes/;
-  temp_route[reg.exec(key)[1].trim()] = require('./module/user.routes.js');
-});
+ctx.keys().forEach((key) => {
+  var reg = /\.\/module\/(.*)\.routes/
+  console.log('keyName_', key)
+  temp_route[reg.exec(key)[1].trim()] = require(key + '')
+})
 
 for (const key in temp_route) {
-  router_list.push(...temp_route[key]);
+  router_list.push(
+    ...temp_route[key].map((item) => {
+      if (item.isLayout) item.component = Layout
+      return item
+    })
+  )
 }
-
-console.log('templist_', router_list);
 
 export const constantRoutes = [
   {
@@ -34,7 +39,7 @@ export const constantRoutes = [
     component: () => import('@/views/404'),
     hidden: true,
   },
-  ...router_list
+  ...router_list,
 ]
 export const asyncRoutes = [
   {
