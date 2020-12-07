@@ -14,7 +14,6 @@
       :trigger="null"
     >
       <vab-logo />
-
       <a-menu
         class="vab-menu"
         theme="dark"
