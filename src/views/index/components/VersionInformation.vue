@@ -10,7 +10,6 @@
     type="success"
     show-icon
   />
-  <a-button type="primary" @click="test1">你好</a-button>
   <a-card class="version-information">
     <template v-slot:title>系统信息</template>
     <template v-slot:extra>
@@ -113,20 +112,29 @@
   </a-card>
 </template>
 <script>
-  import { dependencies, devDependencies } from '*/package.json'
+  import { reactive } from 'vue'
 
   export default {
-    data() {
+    setup() {
+      let updateTime = 'this is my time',
+        dependencies = reactive({
+          vue: `{{vue版本}}`,
+          'ant-design-vue': `{{ant-design-vue版本}}`,
+          vuex: '{{vuex版本}}',
+          'vue-router': '{{vue-router版本}}',
+          axios: '{{axios版本}}',
+        }),
+        devDependencies = reactive({
+          '@vue/cli-service': '{{@vue/cli-service版本}}',
+          'eslint-plugin-vue': '{{eslint-plugin-vue版本}}',
+          'babel-eslint': '{{babel-eslint版本}}',
+        })
+
       return {
-        updateTime: process.env.VUE_APP_UPDATE_TIME,
-        dependencies: dependencies,
-        devDependencies: devDependencies,
+        updateTime,
+        dependencies,
+        devDependencies,
       }
-    },
-    methods: {
-      test1() {
-        this.$router.push('/user/user')
-      },
     },
   }
 </script>
